@@ -1,0 +1,57 @@
+@use "variables" as *;
+
+.categoryGallery {
+    display: flex;
+    // bumping the items to the next line
+    flex-wrap: wrap;
+    // taking up 100% of the width of it's parent
+    width: 100%;
+    // justify-content centers it horizontally
+    justify-content: center;
+    // align-items centers it vertically/cross-axis
+    align-items: center;
+
+    //targetting the item class
+    .item {
+        // flex-basis is to have 2 categories on 1 line
+        flex-basis: 40%;
+        padding: 45px;
+        margin: 50px 25px 25px;
+        border-radius: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            border-radius: 10%;
+            margin-bottom: 20px;
+        }
+
+        &:hover {
+            transform: scale(0.95);
+        }
+
+        &:focus {
+            transform: scale(0.95);
+        }
+    }
+
+    .itemOne {
+        background-color: $quinary;
+    }
+
+    .itemTwo {
+        background-color: $secondary;
+    }
+
+    .itemThree {
+        background-color: $tertiary;
+    }
+
+    .itemFour {
+        background-color: $quaternary;
+    }
+}

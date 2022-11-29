@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>STARTER - Toybox Homepage</title>
+</head>
+<body>
+	<!-- building out the navigation bar -->
+    <nav class="navBar">
+		<!-- putting everything in a wrapper to contain the content -->
+		<div class="wrapper">
+			<!-- this is the dotted square button that you click for the navbar to slide out -->
+			<button class="menuIcon">
+				<img src="./assets/menu-button.svg" alt="opens slide-out navigation">
+			</button>
+			<!-- putting the company name/logo in an anchor, but also in an h1 for SEO. company name should always be in an h1 element -->
+			<!-- we use an anchor tag because it's supposed to be a link to another page -->
+			<a href="#" class="logo">
+				<h1>Toybox</h1>
+			</a>
+			<!-- building out the 3 menu items in nav bar. <ul> is correct too, but <div> because these items aren't really related -->
+			<div class="searchCart">
+				<!-- search icon -> brings up an input -->
+				<button class="menuIcon">
+					<img src="./assets/search.svg" alt="search icon" class="searchIcon">
+				</button>
+			
+				<!-- purse icon -> takes the user to the cart page -->
+				<!-- we use an anchor tag because it's supposed to be a link to another page -->
+				<a href="#" class="bag">
+					<img src="./assets/shop-bag.svg" alt="shopping bag icon" class="bagIcon">
+				</a>
+			
+				<!-- number '0' icon -> a changing number value -->
+				<!-- we use a <p> tag for a hardcoded 0, but we wrap it in a div because it makes it easier to manipulate -->
+				<div class="counter">
+					<p class="smallCopy">0</p>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+<main>
+	<section class="categories" id="categories">
+		<!-- we use an id because we may want to jump to it from the nav - used when you want to link via # in href -->
+		<div class="wrapper">
+			<h2>Categories</h2>
+			<p>Explore our range of hand-made toys</p>
+
+			<div class="categoryGallery">
+				<a href="#" class="item">
+					<img src="./assets/safari-trio.jpg" alt="Hand-carved safari animal toys">
+					<h4>Safari</h4>
+					<p>Land-dwelling African favourites</p>
+				</a>
+
+				<a href="#" class="item itemTwo">
+					<img src="./assets/ocean-trio.jpg" alt="Hand-carved ocean animal toys">
+					<h4>Ocean</h4>
+					<p>Adorable aquatic characters</p>
+				</a>
+
+				<a href="#" class="item itemThree">
+					<img src="./assets/dino-trio.jpg" alt="Hand-carved dinosaur toys">
+					<h4>Dinos</h4>
+					<p>Meet these Prehistoric Pals</p>
+				</a>
+
+				<a href="#" class="item itemFour">
+					<img src="./assets/sale.jpg" alt="Toddler playing with toys">
+					<h4>Sale</h4>
+					<p>Act quickly and grab these bargains</p>
+				</a>
+			</div>
+				
+		</div>
+
+		
+		
+
+
+	</section>
+</main> 
+
+
+	<!-- starting the footer -->
+	<footer>
+		<div class="wrapper">
+			<a href="#" class="logo">
+				<h4>Toybox</h4>
+			</a>
+			<!-- building out the navigation section in the footer -->
+			<nav>
+				<!-- 3 uls because there are 3 columns -->
+				<ul class="footerShop">
+					<li><h5>Shop</h5></li>
+					<li>
+						<a href="#">Safari</a>
+					</li>
+					<li>
+						<a href="#">Ocean</a>
+					</li>
+					<li>
+						<a href="#">Dinos</a>
+					</li>
+					<li>
+						<a href="#">Sale</a>
+					</li>
+				</ul>
+
+				<ul class="footerAbout">
+					<li>
+						<h5>About</h5>
+					</li>
+					<li>
+						<a href="#">About Us</a>
+					</li>
+					<li>
+						<a href="#">FAQ</a>
+					</li>
+					<li>
+						<a href="#">News</a>
+					</li>
+					<li>
+						<a href="#">Legal</a>
+					</li>
+					<li>
+						<a href="#">Contact</a>
+					</li>
+				</ul>
+
+				<ul class="footerTemplate">
+					<li>
+						<h5>Template</h5>
+					</li>
+					<li>
+						<a href="#">Style Guide</a>
+					</li>
+					<li>
+						<a href="#">Licenses</a>
+					</li>
+					<li>
+						<a href="#">Changelog</a>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+</body>
+</html>

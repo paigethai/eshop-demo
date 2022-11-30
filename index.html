@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,146 +8,173 @@
 	<title>STARTER - Toybox Homepage</title>
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-	<!-- building out the navigation bar -->
-    <nav class="navBar">
-		<!-- putting everything in a wrapper to contain the content -->
+	<nav class="navBar">
 		<div class="wrapper">
-			<!-- this is the dotted square button that you click for the navbar to slide out -->
 			<button class="menuIcon">
-				<img src="./assets/menu-button.svg" alt="opens slide-out navigation">
+				<img src="./assets/menu-button.svg" alt="open slide-out navigation">
 			</button>
-			<!-- putting the company name/logo in an anchor, but also in an h1 for SEO. company name should always be in an h1 element -->
-			<!-- we use an anchor tag because it's supposed to be a link to another page -->
 			<a href="#" class="logo">
 				<h1>Toybox</h1>
 			</a>
-			<!-- building out the 3 menu items in nav bar. <ul> is correct too, but <div> because these items aren't really related -->
 			<div class="searchCart">
-				<!-- search icon -> brings up an input -->
 				<button class="menuIcon">
 					<img src="./assets/search.svg" alt="search icon" class="searchIcon">
 				</button>
-			
-				<!-- purse icon -> takes the user to the cart page -->
-				<!-- we use an anchor tag because it's supposed to be a link to another page -->
 				<a href="#" class="bag">
 					<img src="./assets/shop-bag.svg" alt="shopping bag icon" class="bagIcon">
 				</a>
-			
-				<!-- number '0' icon -> a changing number value -->
-				<!-- we use a <p> tag for a hardcoded 0, but we wrap it in a div because it makes it easier to manipulate -->
 				<div class="counter">
 					<p class="smallCopy">0</p>
 				</div>
+			</div> <!-- .searchCart end -->
+		</div> <!-- .wrapper end -->
+
+		<div class="slideOutNav">
+			<div class="buttonContainer">
+				<button>
+					<img src="./assets/menu-close.svg" alt="close navigation">
+				</button>
 			</div>
-		</div>
-	</nav>
-
-<main>
-	<section class="categories" id="categories">
-		<!-- we use an id because we may want to jump to it from the nav - used when you want to link via # in href -->
-		<div class="wrapper">
-			<h2>Categories</h2>
-			<p>Explore our range of hand-made toys</p>
-
-			<div class="categoryGallery">
-				<a href="#" class="item itemOne">
-					<img src="./assets/safari-trio.jpg" alt="Hand-carved safari animal toys">
-					<h4>Safari</h4>
-					<p>Land-dwelling African favourites</p>
-				</a>
-
-				<a href="#" class="item itemTwo">
-					<img src="./assets/ocean-trio.jpg" alt="Hand-carved ocean animal toys">
-					<h4>Ocean</h4>
-					<p>Adorable aquatic characters</p>
-				</a>
-
-				<a href="#" class="item itemThree">
-					<img src="./assets/dino-trio.jpg" alt="Hand-carved dinosaur toys">
-					<h4>Dinos</h4>
-					<p>Meet these Prehistoric Pals</p>
-				</a>
-
-				<a href="#" class="item itemFour">
-					<img src="./assets/sale.jpg" alt="Toddler playing with toys">
-					<h4>Sale</h4>
-					<p>Act quickly and grab these bargains</p>
-				</a>
-			</div>
-				
-		</div>
-
-		
-		
-
-
-	</section>
-</main> 
-
-
-	<!-- starting the footer -->
-	<footer>
-		<div class="wrapper">
-			<a href="#" class="logo">
-				<h4>Toybox</h4>
-			</a>
-			<!-- building out the navigation section in the footer -->
 			<nav>
-				<!-- 3 uls because there are 3 columns -->
-				<ul class="footerShop">
-					<li><h5>Shop</h5></li>
-					<li>
-						<a href="#">Safari</a>
-					</li>
-					<li>
-						<a href="#">Ocean</a>
-					</li>
-					<li>
-						<a href="#">Dinos</a>
-					</li>
-					<li>
-						<a href="#">Sale</a>
-					</li>
-				</ul>
-
-				<ul class="footerAbout">
-					<li>
-						<h5>About</h5>
-					</li>
-					<li>
-						<a href="#">About Us</a>
-					</li>
-					<li>
-						<a href="#">FAQ</a>
-					</li>
-					<li>
-						<a href="#">News</a>
-					</li>
-					<li>
-						<a href="#">Legal</a>
-					</li>
-					<li>
-						<a href="#">Contact</a>
-					</li>
-				</ul>
-
-				<ul class="footerTemplate">
-					<li>
-						<h5>Template</h5>
-					</li>
-					<li>
-						<a href="#">Style Guide</a>
-					</li>
-					<li>
-						<a href="#">Licenses</a>
-					</li>
-					<li>
-						<a href="#">Changelog</a>
+				<ul class="mainMenu">
+					<li><a href="#">Shop</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
+	</nav> <!-- nav end -->
+
+	<header>
+		<div class="headerImgContainer wrapper">
+			<img src="./assets/header-image.jpg"
+				alt="A child in overalls playing with colourful wooden blocks on the floor">
+		</div>
+		<div class="headerContent wrapper">
+			<div class="contentContainer">
+				<h5>Handcrafted for kids</h5>
+				<h3>Go on, let them play with wooden blocks.</h3>
+				<p>Sed gravida eu ac aliquam pellentesque pharetra pharetra. Augue nam facilisis tristique turpis
+					iaculis pulvinar tellus.</p>
+				<a class="button">Shop All</a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="categories" id="categories">
+			<div class="wrapper">
+				<h2>Categories</h2>
+				<p>Explore our range of hand-made toys</p>
+				<ul class="categoryGallery">
+					<li class="item itemOne">
+						<a href="">
+							<img src="./assets/safari-trio.jpg" alt="Hand-carved safari animal toys">
+							<h4>Safari</h4>
+							<p>Land-dwelling African Favourites</p>
+						</a>
+					</li>
+					<li class="item itemTwo">
+						<a href="">
+							<img src="./assets/ocean-trio.jpg" alt="A collection of ocean-themed animal toys">
+							<h4>Ocean</h4>
+							<p>Adorable Aquatic Characters</p>
+						</a>
+					</li>
+					<li class="item itemThree">
+						<a href="">
+							<img src="./assets/dino-trio.jpg" alt="Hand-carved dinosaur toys for kids">
+							<h4>Dinos</h4>
+							<p>Meet These Prehistoric Pals</p>
+						</a>
+					</li>
+					<li class="item itemFour">
+						<a href="">
+							<img src="./assets/sale.jpg" alt="A toddler pulling two wooden animals on wheels">
+							<h4>Sale</h4>
+							<p>Act Quickly and Grab These Bargains</p>
+						</a>
+					</li>
+				</ul> <!-- .categoryGallery END-->
+			</div> <!-- .wrapper END-->
+		</section> <!-- .categories END-->
+		<section class="play" id="play">
+			<div class="playContainer wrapper">
+				<h5>Learning Through Doing</h5>
+				<h3>Let them play.</h3>
+				<p>Bauris eget lacus, amet mollis felis, sed posuere odio. Justo purus orci ultricies et. Sit etiam
+					porta sed tellus. Cattis pellentesque felis tristique eget purus feugiat massa.</p>
+				<button class="solid">Learn About Us</button>
+			</div>
+		</section>
+	</main> <!-- main end -->
+
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="footerFlexContainer">
+				<a href="" class="logo">
+					<h4>Toybox</h4>
+				</a>
+				<div class="footerNav">
+					<nav>
+						<ul class="footerShop">
+							<li>
+								<h5>Shop</h5>
+							</li>
+							<li>
+								<a href="">Safari</a>
+							</li>
+							<li>
+								<a href="">Ocean</a>
+							</li>
+							<li>
+								<a href="">Dinos</a>
+							</li>
+							<li>
+								<a href="">Sale</a>
+							</li>
+						</ul>
+						<ul class="footerAbout">
+							<li>
+								<h5>About</h5>
+							</li>
+							<li>
+								<a href="">About Us</a>
+							</li>
+							<li>
+								<a href="">FAQ</a>
+							</li>
+							<li>
+								<a href="">News</a>
+							</li>
+							<li>
+								<a href="">Legal</a>
+							</li>
+							<li>
+								<a href="">Contact</a>
+							</li>
+						</ul>
+						<ul class="footerTemp">
+							<li>
+								<h5>Template</h5>
+							</li>
+							<li>
+								<a href="">Style Guide</a>
+							</li>
+							<li>
+								<a href="">Licenses</a>
+							</li>
+							<li>
+								<a href="">Changelog</a>
+							</li>
+						</ul>
+					</nav>
+				</div> <!-- .footerNav END -->
+			</div> <!-- .footerFlexContainer END-->
+		</div> <!-- .wrapper END-->
 	</footer>
 </body>
-</html>

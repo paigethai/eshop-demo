@@ -20,5 +20,8 @@
 @use "./partials/typography";
 @use "./partials/variables";
 @use "./partials/baseStyles";
+@use "./partials/header";
+@use "./partials/nav";
+@use "./partials/footer";
 @use "./partials/sections";
 @use "./partials/mediaQueries";

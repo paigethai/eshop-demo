@@ -2,18 +2,12 @@
 
 .categoryGallery {
     display: flex;
-    // bumping the items to the next line
     flex-wrap: wrap;
-    // taking up 100% of the width of it's parent
-    width: 100%;
-    // justify-content centers it horizontally
     justify-content: center;
-    // align-items centers it vertically/cross-axis
     align-items: center;
+    width: 100%;
 
-    //targetting the item class
     .item {
-        // flex-basis is to have 2 categories on 1 line
         flex-basis: 40%;
         padding: 45px;
         margin: 50px 25px 25px;
@@ -37,6 +31,7 @@
         &:focus {
             transform: scale(0.95);
         }
+
     }
 
     .itemOne {
@@ -53,5 +48,26 @@
 
     .itemFour {
         background-color: $quaternary;
+    }
+
+}
+
+.play {
+    background-image: url(../assets/background-image.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+
+    .playContainer {
+        max-width: 650px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 70px 45px;
+        border: 24px solid $secondary;
+        background-color: $solidWhite;
     }
 }
